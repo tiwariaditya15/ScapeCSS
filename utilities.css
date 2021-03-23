@@ -24,6 +24,7 @@
   --pink-dark: #9d174d;
   --indigo-dark: #3730a3;
   --purple-dark: #5b21b6;
+  --gray-50: #f9fafb;
 }
 /* postions */
 .absolute {
@@ -127,6 +128,72 @@
   background-color: var(--purple);
 }
 
+/* for lighter shades of background */
+.bg-light-success {
+  background-color: var(--success-light);
+}
+.bg-light-failure {
+  background-color: var(--failure-light);
+}
+.bg-light-blue {
+  background-color: var(--blue-light);
+}
+.bg-light-gray {
+  background-color: var(--gray-light);
+}
+.bg-light-yellow {
+  background-color: var(--yellow-light);
+}
+.bg-light-pink {
+  background-color: var(--pink-light);
+}
+.bg-light-indigo {
+  background-color: var(--indigo-light);
+}
+.bg-light-purple {
+  background-color: var(--purple-light);
+}
+
+/* for darker shades */
+.bg-dark-success {
+  background-color: var(--success-dark);
+}
+.bg-dark-failure {
+  background-color: var(--failure-dark);
+}
+.bg-dark-blue {
+  background-color: var(--blue-dark);
+}
+.bg-dark-gray {
+  background-color: var(--gray-dark);
+}
+.bg-dark-yellow {
+  background-color: var(--yellow-dark);
+}
+.bg-dark-pink {
+  background-color: var(--pink-dark);
+}
+.bg-dark-indigo {
+  background-color: var(--indigo-dark);
+}
+.bg-dark-purple {
+  background-color: var(--purple-dark);
+}
+/* text utilities */
+.h1,
+.h2,
+.h4,
+.h5,
+.h6 {
+}
+.text-center {
+  text-align: center;
+}
+
+.lead {
+  font-size: 1.5rem;
+  font-weight: 200;
+}
 /* text colors */
 .text-white {
   color: var(--white);
@@ -154,6 +221,57 @@
 }
 .text-purple {
   color: var(--purple);
+}
+
+/* text ligher shades */
+.text-light-success {
+  color: var(--success-light);
+}
+.text-light-failure {
+  color: var(--failure-light);
+}
+.text-light-blue {
+  color: var(--blue-light);
+}
+.text-light-gray {
+  color: var(--gray-light);
+}
+.text-light-yellow {
+  color: var(--yellow-light);
+}
+.text-light-pink {
+  color: var(--pink-light);
+}
+.text-light-indigo {
+  color: var(--indigo-light);
+}
+.text-light-purple {
+  color: var(--purple-light);
+}
+/* text darker shades */
+.text-dark-success {
+  color: var(--success-dark);
+}
+.text-dark-failure {
+  color: var(--failure-dark);
+}
+.text-dark-blue {
+  color: var(--blue-dark);
+}
+.text-dark-gray {
+  color: var(--gray-dark);
+}
+.text-dark-yellow {
+  color: var(--yellow-dark);
+}
+.text-dark-pink {
+  color: var(--pink-dark);
+}
+.text-dark-indigo {
+  color: var(--indigo-dark);
+}
+.text-dark-purple {
+  color: var(--purple-dark);
 }
 
 /* flex */

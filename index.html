@@ -7,71 +7,469 @@
     <link rel="stylesheet" href="./utilities.css" />
     <link rel="stylesheet" href="./components.css" />
     <title>Document</title>
-    <style></style>
+    <style>
+      .root {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+      }
+    </style>
   </head>
-  <body class="">
-    <img
-      class="avatar-lg"
-      src="https://images.unsplash.com/photo-1528763380143-65b3ac89a3ff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80"
-      alt=""
-      srcset=""
-    />
-    <img
-      class="avatar-md"
-      src="https://images.unsplash.com/photo-1528763380143-65b3ac89a3ff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80"
-      alt=""
-      srcset=""
-    />
-    <img
-      class="avatar-sm"
-      src="https://images.unsplash.com/photo-1528763380143-65b3ac89a3ff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80"
-      alt=""
-      srcset=""
-    />
-    <br />
-    <!-- small sized button -->
-    <button class="button button-sm button-success">Success</button>
-    <button class="button button-sm button-failure">Failure</button>
-    <button class="button button-sm button-blue">Blue</button>
-    <button class="button button-sm button-gray">Gray</button>
-    <button class="button button-sm button-yellow">Yellow</button>
-    <button class="button button-sm button-pink">Pink</button>
-    <button class="button button-sm button-indigo">Indigo</button>
-    <button class="button button-sm button-purple">Purple</button>
-    <br />
-    <!-- medium sized button -->
-    <button class="button button-md button-success">Success</button>
-    <button class="button button-md button-failure">Failure</button>
-    <button class="button button-md button-blue">Blue</button>
-    <button class="button button-md button-gray">Gray</button>
-    <button class="button button-md button-yellow">Yellow</button>
-    <button class="button button-md button-pink">Pink</button>
-    <button class="button button-md button-indigo">Indigo</button>
-    <button class="button button-md button-purple">Purple</button>
+  <body class="root">
+    <section class="side-nav"></section>
+    <section class="main">
+      <!-- alerts -->
+      <section class="alerts">
+        <section class="alert alert-success">This is an alert!</section>
+        <section class="alert alert-failure">This is an alert!</section>
+        <section class="alert alert-blue">This is an alert!</section>
+        <section class="alert alert-gray">This is an alert!</section>
+        <section class="alert alert-yellow">This is an alert!</section>
+        <section class="alert alert-pink">This is an alert!</section>
+        <section class="alert alert-indigo">This is an alert!</section>
+      </section>
+      <!-- avatars -->
+      <section class="avatars">
+        <img
+          class="avatar avatar-lg"
+          src="https://images.unsplash.com/photo-1528763380143-65b3ac89a3ff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80"
+          alt=""
+          srcset=""
+        />
+        <img
+          class="avatar avatar-md"
+          src="https://images.unsplash.com/photo-1528763380143-65b3ac89a3ff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80"
+          alt=""
+          srcset=""
+        />
+        <img
+          class="avatar avatar-sm"
+          src="https://images.unsplash.com/photo-1528763380143-65b3ac89a3ff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80"
+          alt=""
+          srcset=""
+        />
+      </section>
+      <sections class="buttons">
+        <!-- small sized btn -->
+        <!-- <button class="btn btn-success">Success</button>
+        <button class="btn btn-failure">Failure</button>
+        <button class="btn btn-blue">Blue</button>
+        <button class="btn btn-gray">Gray</button>
+        <button class="btn btn-yellow">Yellow</button>
+        <button class="btn btn-pink">Pink</button>
+        <button class="btn btn-indigo">Indigo</button>
+        <button class="btn btn-purple">Purple</button> -->
+        <br />
+        <!-- medium sized btn -->
+        <button class="btn btn-primary-success">Success</button>
+        <button class="btn btn-primary-failure">Failure</button>
+        <button class="btn btn-primary-blue">Blue</button>
+        <button class="btn btn-primary-gray">Gray</button>
+        <button class="btn btn-primary-yellow">Yellow</button>
+        <button class="btn btn-primary-pink">Pink</button>
+        <button class="btn btn-primary-indigo">Indigo</button>
+        <button class="btn btn-primary-purple">Purple</button>
+        <br />
+        <!-- text btn -->
+        <span class="btn-text text-success btn-text-success">Text</span>
+        <span class="btn-text text-failure btn-text-failure">Text</span>
+        <span class="btn-text text-yellow btn-text-yellow">Text</span>
+        <span class="btn-text text-pink btn-text-pink">Text</span>
+        <span class="btn-text text-indigo btn-text-indigo">Text</span>
+        <span class="btn-text text-blue btn-text-blue">Text</span>
+        <span class="btn-text text-gray btn-text-gray">Text</span>
+        <br />
+        <!-- icon btn -->
+        <img class="btn-icon" src="./icons/facebook.svg" alt="fb" srcset="" />
+        <img class="btn-icon" src="./icons/reddit.svg" alt="reddit" srcset="" />
+        <img class="btn-icon" src="./icons/github.svg" alt="github" srcset="" />
+        <img
+          class="btn-icon"
+          src="./icons/twitter.svg"
+          alt="twitter"
+          srcset=""
+        />
+        <img
+          class="btn-icon"
+          src="./icons/youtube.svg"
+          alt="youtube"
+          srcset=""
+        />
+        <img
+          class="btn-icon"
+          src="./icons/linkedin.svg"
+          alt="linkedin"
+          srcset=""
+        />
+      </sections>
+      <!-- badges -->
+      <section class="badges">
+        <span class="badge bg-light-blue text-dark-blue">
+          John Doe<span class="badge-notification bg-dark-blue text-light-blue"
+            >3</span
+          >
+        </span>
+        <span class="badge bg-light-purple text-dark-purple">
+          Jane Doe<span
+            class="badge-notification bg-dark-purple text-light-purple"
+            >3</span
+          >
+        </span>
+      </section>
+      <!-- cards -->
+      <section class="cards">
+        <section class="card card-shadow">
+          <img
+            class="card-img"
+            src="https://images.unsplash.com/photo-1505324049901-eaf27ceaedf9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8c3VuJTIwZGF3bnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+            alt=""
+            srcset=""
+          />
+          <section class="card-content">
+            <p class="card-title">This is card title</p>
+            <p class="card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
+              commodi unde maiores? Cupiditate quod, suscipit temporibus animi
+              nostrum eum, voluptatibus, distinctio quaerat quidem iure
+              repudiandae numquam velit rem! Voluptate, asperiores?
+            </p>
+            <section class="card-actions">
+              <button>Primary Action</button>
+            </section>
+          </section>
+        </section>
+        <br />
+        <section class="card card-horizontal">
+          <img
+            class="card-img"
+            src="https://images.unsplash.com/photo-1505324049901-eaf27ceaedf9?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8c3VuJTIwZGF3bnxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60"
+            alt=""
+            srcset=""
+          />
+          <section class="card-content">
+            <p class="card-title">This is card title</p>
+            <p class="card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
+              commodi unde maiores? Cupiditate quod, suscipit temporibus animi
+              nostrum eum, voluptatibus, distinctio quaerat quidem iure
+              repudiandae numquam velit rem! Voluptate, asperiores?
+            </p>
+            <section class="card-actions">
+              <button>Primary Action</button>
+            </section>
+          </section>
+        </section>
+        <br />
+        <!-- text card -->
+        <section class="card">
+          <section class="card-content">
+            <p class="card-title">This is card title</p>
+            <p class="card-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
+              commodi unde maiores? Cupiditate quod, suscipit temporibus animi
+              nostrum eum, voluptatibus, distinctio quaerat quidem iure
+              repudiandae numquam velit rem! Voluptate, asperiores?
+            </p>
+            <section class="card-actions">
+              <button>Primary Action</button>
+            </section>
+          </section>
+        </section>
+      </section>
+      <br />
+      <!-- images and thmbnails -->
+      <section class="images" style="max-width: 50%; margin: 0 auto">
+        <img
+          src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+          alt=""
+          class="img-coverpage edge-rounded"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+          alt=""
+          class="img-thumbnail edge-rounded"
+        />
+      </section>
 
-    <br />
-    <!-- large button -->
-    <button class="button button-lg button-success">Success</button>
-    <button class="button button-lg button-success">Success</button>
-    <button class="button button-lg button-failure">Failure</button>
-    <button class="button button-lg button-blue">Blue</button>
-    <button class="button button-lg button-gray">Gray</button>
-    <button class="button button-lg button-yellow">Yellow</button>
-    <button class="button button-lg button-pink">Pink</button>
-    <button class="button button-lg button-indigo">Indigo</button>
-    <button class="button button-lg button-purple">Purple</button>
+      <!-- inputs -->
+      <section class="inputs">
+        <input
+          type="text"
+          class="form-input outlined"
+          placeholder="Enter name"
+        />
+        <br />
+        <br />
+        <input type="text" class="form-input" placeholder="Enter name" />
+        <br />
+        <input
+          type="range"
+          class="form-range"
+          name="pc"
+          id="pc"
+          min="10"
+          max="100"
+          step="10"
+        />
+        <!-- checkboxes and radio button -->
+        <!-- <br />
+        IT:
+        <input
+          type="checkbox"
+          class="form-checkbox"
+          name="input1"
+          value="input1"
+        />
+        CS:
+        <input
+          type="checkbox"
+          class="form-checkbox"
+          name="input2"
+          value="input2"
+        />
+        <br />
+        Male:
+        <input type="radio" class="form-radio" name="gender" value="male" />
+        Female:
+        <input type="radio" class="form-radio" name="gender" value="female" />
+        -->
+      </section>
+      <!-- lists -->
+      <section class="lists">
+        <ul class="list">
+          <li class="list-item active">First Item</li>
+          <li class="list-item">Second Item</li>
+          <li class="list-item">Third Item</li>
+          <li class="list-item">Fourth Item</li>
+        </ul>
+        <ul class="list">
+          <li class="list-item active">First Item</li>
+          <li class="list-item">Second Item</li>
+          <li class="list-item">
+            Third Item
+            <span class="pill-rounded">1</span>
+          </li>
+          <li class="list-item">
+            Fourth Item
 
-    <br />
-    <!-- text button -->
-    <span class="button-text text-success button-text-success">Text</span>
-    <span class="button-text text-failure button-text-failure">Text</span>
-    <span class="button-text text-yellow button-text-yellow">Text</span>
-    <span class="button-text text-pink button-text-pink">Text</span>
-    <span class="button-text text-indigo button-text-indigo">Text</span>
-    <span class="button-text text-blue button-text-blue">Text</span>
-    <span class="button-text text-gray button-text-gray">Text</span>
-    <br />
+            <span class="pill-rounded">3</span>
+          </li>
+        </ul>
+      </section>
+      <br />
+      <!-- navigation bars -->
+      <section class="navigations">
+        <section class="navbar">
+          <section class="main">
+            <span class="nav-links">
+              <a class="nav-link nav-brandlogo">ScapeCSS</a>
+              <a href="" class="nav-link">Home</a>
+              <a href="" class="nav-link">Features</a>
+              <a href="" class="nav-link">Contacts</a>
+              <a href="" class="nav-link">About</a>
+            </span>
+          </section>
+          <section class="nav-profile">
+            <img
+              class="avatar avatar-sm"
+              src="https://images.unsplash.com/photo-1528763380143-65b3ac89a3ff?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=635&q=80"
+              alt=""
+              srcset=""
+            />
+          </section>
+        </section>
+      </section>
 
-    <!-- icon button -->
+      <!-- modals -->
+      <section class="modals">
+        <section class="modal bg-light-gray">
+          <section class="modal-header">
+            <span class="modal-header-title">Modal Title</span>
+            <span class="modal-header-close">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                aria-hidden="true"
+                role="img"
+                class="iconify iconify--mdi"
+                width="32"
+                height="32"
+                preserveAspectRatio="xMidYMid meet"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41z"
+                  fill="currentColor"
+                ></path>
+              </svg>
+            </span>
+          </section>
+          <section class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
+            sapiente eligendi officiis neque fugiat, rerum sunt excepturi,
+            accusamus aliquid omnis, velit molestias iusto dolor voluptatum.
+            Tempore optio vitae ut distinctio.
+          </section>
+          <section class="modal-action">
+            <button class="btn btn-primary-blue">Ok</button>
+            <button class="btn btn-outline-blue">Close</button>
+          </section>
+        </section>
+      </section>
+
+      <!-- text utilities -->
+      <section class="text-utilities">
+        <h1 class="h1">h1 heading</h1>
+        <h2 class="h2">h2 heading</h2>
+        <h3 class="h3">h3 heading</h3>
+        <h4 class="h4">h4 heading</h4>
+        <h5 class="h5">h5 heading</h5>
+        <h6 class="h6">h6 heading</h6>
+        <p class="text-gray">This is Gray Text</p>
+        <p class="lead">This is lead</p>
+        <p class="lead text-center">This is lead and centered text</p>
+      </section>
+
+      <!-- snackbars  -->
+      <section class="snackbars">
+        <section class="snackbar snackbar-success">
+          <span>Added</span>
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--mdi"
+              width="32"
+              height="20"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </span>
+        </section>
+        <section class="snackbar snackbar-failure">
+          <span>OOPS! Can't delete</span>
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--mdi"
+              width="32"
+              height="20"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </span>
+        </section>
+      </section>
+
+      <!-- ratings -->
+      <section class="ratings">
+        <section class="rating">
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--ic"
+              width="32"
+              height="32"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M14.43 10L12 2l-2.43 8H2l6.18 4.41L5.83 22L12 17.31L18.18 22l-2.35-7.59L22 10z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </span>
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--ic"
+              width="32"
+              height="32"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M14.43 10L12 2l-2.43 8H2l6.18 4.41L5.83 22L12 17.31L18.18 22l-2.35-7.59L22 10z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </span>
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--ic"
+              width="32"
+              height="32"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M14.43 10L12 2l-2.43 8H2l6.18 4.41L5.83 22L12 17.31L18.18 22l-2.35-7.59L22 10z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </span>
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--ic"
+              width="32"
+              height="32"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 8.89l.94 3.11h2.82l-2.27 1.62l.93 3.01L12 14.79l-2.42 1.84l.93-3.01L8.24 12h2.82L12 8.89M12 2l-2.42 8H2l6.17 4.41L5.83 22L12 17.31L18.18 22l-2.35-7.59L22 10h-7.58L12 2z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </span>
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--ic"
+              width="32"
+              height="32"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M12 8.89l.94 3.11h2.82l-2.27 1.62l.93 3.01L12 14.79l-2.42 1.84l.93-3.01L8.24 12h2.82L12 8.89M12 2l-2.42 8H2l6.17 4.41L5.83 22L12 17.31L18.18 22l-2.35-7.59L22 10h-7.58L12 2z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </span>
+        </section>
+      </section>
+    </section>
   </body>
 </html>
