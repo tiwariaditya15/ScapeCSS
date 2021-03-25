@@ -180,12 +180,7 @@
   background-color: var(--purple-dark);
 }
 /* text utilities */
-.h1,
-.h2,
-.h4,
-.h5,
-.h6 {
-}
+
 .text-center {
   text-align: center;
 }
