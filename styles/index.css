@@ -36,12 +36,18 @@ html {
   /* background-color: #dbff4d; */
   /* box-shadow: rgba(33, 35, 38, 0.1) 0px 12px 10px -10px; */
 }
+
+.logo > svg {
+  color: #cf0;
+}
 .side-nav {
   height: 100%;
+  position: sticky;
+  top: 0px;
+  left: 0px;
 }
 
 .main {
-  margin-left: ;
 }
 
 .components {
@@ -77,6 +83,10 @@ html {
 .repo {
   cursor: pointer;
   padding-right: 2.5rem;
+}
+
+.repo > a {
+  color: var(--gray-600);
 }
 
 .headings {
