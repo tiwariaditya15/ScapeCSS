@@ -268,6 +268,7 @@
   border-radius: 0.2rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  cursor: pointer;
 }
 .badge-blue {
   background-color: var(--blue-light);
@@ -471,6 +472,7 @@ ul {
   background-color: var(--blue-light);
   color: var(--blue-dark);
   border-radius: 0.5rem;
+  max-width: 90%;
 }
 
 .nav-brandlogo {
@@ -506,7 +508,8 @@ ul {
   display: flex;
   flex-direction: column;
   max-width: min(400px, 70%);
-  margin: 1rem auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   /* background-color: var(--gray-50); */
   color: var(--gray);
   padding: 1rem;
@@ -563,7 +566,8 @@ ul {
 
 .rating {
   max-width: min(400px, 40%);
-  margin: 1rem auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   color: var(--yellow);
 }
 
