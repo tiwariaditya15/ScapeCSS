@@ -15,6 +15,8 @@ html {
 .body {
   background-color: #f9fafb;
   font-family: "Nunito", sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 .root {
   display: grid;
@@ -40,24 +42,28 @@ html {
 .buttons {
   display: flex;
   justify-content: space-around;
+  max-width: 35%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 2rem;
 }
 .buttons > a {
   text-decoration: none;
-  padding: 1rem;
-  margin: 1rem;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  margin-top: 1rem 0.5rem 1rem auto;
   border-radius: 0.2rem;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 500;
 }
 
 .buttons > *:first-child {
   background-color: var(--primary);
   text-align: center;
-  display: flex;
-  align-items: center;
+  margin-right: 0rem;
 }
 .buttons > *:first-child:hover {
   background-color: rgb(219, 255, 75);
+  color: var(--gray-600);
 }
 .buttons > *:last-child {
   color: var(--gray-600);
@@ -104,12 +110,11 @@ code {
 }
 .footer {
   position: fixed;
-  left: 0;
   bottom: 0;
-  width: 100%;
-  text-align: center;
   padding: 1rem;
   border-top: 1px solid whitesmoke;
+  color: var(--gray-600);
+  text-align: center;
 }
 .headings {
   margin-top: 2rem;
@@ -120,13 +125,13 @@ code {
 .hero {
   color: var(--gray-600);
   max-width: 90%;
-  margin-top: 12rem;
+  margin-top: 9rem;
   margin-left: auto;
   margin-right: auto;
 }
 .hero > h1 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3.5rem;
 }
 .hero > h1 > .highlight {
   color: var(--primary);
@@ -136,7 +141,8 @@ code {
   max-width: 50%;
   margin-left: auto;
   margin-right: auto;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
+  font-weight: 100;
 }
 .logo {
   font-size: 2rem;
@@ -144,12 +150,17 @@ code {
   cursor: pointer;
 }
 
-.logo > svg > path {
+.logo > svg {
   color: var(--primary);
 }
 
-.logo > svg {
-  color: var(--primary);
+.logo .brandname {
+  color: var(--gray-600);
+}
+
+.logo > a {
+  text-decoration: none;
+  color: var(--gray-600);
 }
 
 .repo {
@@ -196,5 +207,11 @@ code {
   }
   .root {
     grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .buttons {
+    max-width: 92%;
   }
 }
