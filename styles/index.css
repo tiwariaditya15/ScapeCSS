@@ -76,8 +76,9 @@ html {
   display: flex;
   flex-direction: column;
   position: fixed;
-  top: 1.5rem;
+  top: 5.5rem;
   left: 0;
+  width: 12%;
   overflow-y: auto;
   max-height: 100%;
 }
