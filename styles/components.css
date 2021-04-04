@@ -305,8 +305,8 @@
   flex-direction: column;
   align-items: stretch;
   max-width: min(300px, 60%);
-  /* max-width: 80%; */
   margin: auto;
+  border: 1px solid var(--gray);
 }
 .card-shadow {
   box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
@@ -328,7 +328,6 @@
 .card-content {
   min-width: 95%;
   color: var(--gray-dark);
-  background-color: #f9fafb;
 }
 
 .card-title {
@@ -342,18 +341,16 @@
 
 .card-actions > button,
 .card-actions > a {
-  color: var(--blue);
-  background-color: var(--blue-light);
+  display: flex;
   padding: 0.5rem 1.5rem;
   margin: 1.3rem;
   border: none;
   cursor: pointer;
-  font-weight: 900;
   border-radius: 0.5rem;
 }
 .card-actions > a {
   color: var(--success-dark);
-  background-color: var(--success-light);
+  border: 1px solid var(--success-light);
   text-decoration: none;
 }
 
