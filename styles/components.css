@@ -469,14 +469,14 @@ ul {
   flex-direction: row;
   justify-content: space-between;
   align-items: stretch;
-  background-color: var(--blue-light);
-  color: var(--blue-dark);
-  border-radius: 0.5rem;
-  max-width: 90%;
+  border: 1px solid var(--gray-600);
+  color: var(--gray-600);
+  border-radius: 0.1rem;
+  max-width: 100%;
 }
 
 .nav-brandlogo {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: bolder;
   /* cursor: pointer; */
 }
@@ -495,12 +495,12 @@ ul {
 }
 
 .nav-link:hover {
-  background-color: var(--blue);
-  color: var(--blue-light);
-  opacity: 0.7;
+  font-weight: bolder;
 }
 
 .nav-profile {
+  display: flex;
+  align-items: center;
   padding: 0.5rem;
 }
 
