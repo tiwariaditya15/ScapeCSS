@@ -69,10 +69,12 @@
       <section class="side-nav">
         <nav>
           <section class="components">
+            <a href="#getstarted">Get Started</a>
             <a href="#alerts">Alerts</a>
             <a href="#avatars">Avatars</a>
             <a href="#buttons">Buttons</a>
             <a href="#badges">Badges</a>
+            <a href="#cards">Cards</a>
             <a href="#images">Images</a>
             <a href="#inputs">Inputs</a>
             <a href="#lists">Lists</a>
@@ -86,6 +88,19 @@
         </nav>
       </section>
       <section class="main">
+        <h2 class="headings">Get Started</h2>
+        <section id="getstarted">
+          <p>
+            To use the components and utility classes link these files to your
+            app.
+          </p>
+          <section class="snippet">
+            <pre><code>
+  &lt;link rel="stylesheet" href="https://scapecss.netlify.app/styles/utilities.css" />
+  &lt;link rel="stylesheet" href="https://scapecss.netlify.app/styles/components.css" />
+            </code></pre>
+          </section>
+        </section>
         <h2 class="headings">Alerts</h2>
         <!-- alerts -->
         <section id="alerts" class="doc-outline">
@@ -295,15 +310,34 @@
               3
             </span>
           </span>
+          <span class="badge-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              aria-hidden="true"
+              role="img"
+              class="iconify iconify--vaadin"
+              width="32"
+              height="32"
+              preserveAspectRatio="xMidYMid meet"
+              viewBox="0 0 16 16"
+            >
+              <path
+                fill="currentColor"
+                d="M14 13.1V12H4.6l.6-1.1l9.2-.9L16 4H3.7L3 1H0v1h2.2l2.1 8.4L3 13v1.5c0 .8.7 1.5 1.5 1.5S6 15.3 6 14.5S5.3 13 4.5 13H12v1.5c0 .8.7 1.5 1.5 1.5s1.5-.7 1.5-1.5c0-.7-.4-1.2-1-1.4z"
+              ></path>
+            </svg>
+            <span class="badge-icon-notification"> 1 </span></span
+          >
         </section>
 
         <!-- badge snippet -->
         <section class="snippet">
           <pre>
               <code>
-  &lt;span class="badge bg-light-pink text-dark-pink"> Jane Doe&lt;/span>
-
-  &lt;span class="badge-notification bg-dark-pink text-light-pink">1&lt;/span> 
+  &lt;span class="badge bg-light-pink text-dark-pink"> Jane Doe
+    &lt;span class="badge-notification bg-dark-pink text-light-pink">1&lt;/span> 
+  &lt;/span>            
               </code>
             </pre>
         </section>
@@ -344,21 +378,7 @@
             </code></pre>
           </section>
           <br />
-          <section class="card card-horizontal">
-            <img class="card-img" src="./images/card.webp" alt="" srcset="" />
-            <section class="card-content">
-              <p class="card-title">This is card title</p>
-              <p class="card-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
-                commodi unde maiores? Cupiditate quod, suscipit temporibus animi
-                nostrum eum, voluptatibus, distinctio quaerat quidem iure
-                repudiandae numquam velit rem! Voluptate, asperiores?
-              </p>
-              <section class="card-actions">
-                <button>Primary Action</button>
-              </section>
-            </section>
-          </section>
+
           <br />
           <!-- text card -->
           <section class="card card-shadow">
@@ -428,7 +448,7 @@
 
         <!-- inputs -->
         <h2 class="headings">Inputs</h2>
-        <section id="inputs">
+        <section id="inputs" style="margin: 1rem">
           <input
             type="text"
             class="form-input outlined"

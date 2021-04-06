@@ -19,25 +19,18 @@ html {
   flex-direction: column;
 }
 .root {
-  display: grid;
-  grid-template-columns: 1fr 6fr;
-  margin-top: 5rem;
+  /* display: grid;
+  grid-template-columns: 1fr 5fr; */
+  display: flex;
 }
 
 .appbar {
-  position: fixed;
-  margin-bottom: 2rem;
-  top: 0;
-  width: 100%;
   padding: 1.2rem;
-  z-index: 1;
   display: flex;
   justify-content: space-between;
   background-color: white;
   color: var(--gray-600);
   box-shadow: 0 1px 6px 0 rgba(32, 33, 36, 0.28);
-  /* background-color: #dbff4d; */
-  /* box-shadow: rgba(33, 35, 38, 0.1) 0px 12px 10px -10px; */
 }
 .buttons {
   display: flex;
@@ -75,12 +68,7 @@ html {
 .components {
   display: flex;
   flex-direction: column;
-  position: fixed;
-  top: 5.5rem;
-  left: 0;
-  width: 12%;
-  overflow-y: auto;
-  max-height: 100%;
+  align-items: flex-start;
 }
 
 .components > a {
@@ -128,7 +116,7 @@ code {
 .hero {
   color: var(--gray-600);
   max-width: 90%;
-  margin-top: 9rem;
+  margin-top: 6rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -168,7 +156,7 @@ code {
 
 .repo {
   cursor: pointer;
-  padding-right: 2.5rem;
+  padding-right: 1rem;
 }
 
 .repo > a {
@@ -183,6 +171,10 @@ code {
 }
 
 .side-nav {
+  padding: 2rem;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0px;
   height: 100%;
 }
 
@@ -197,6 +189,9 @@ code {
     margin-left: auto;
     margin-right: auto;
   }
+  .hero {
+    margin-top: 2rem;
+  }
   .hero > h3 {
     max-width: 100%;
   }
@@ -206,7 +201,7 @@ code {
   .snippet {
     margin-left: auto;
     margin-right: auto;
-    max-width: 90%;
+    max-width: 95%;
   }
   .root {
     grid-template-columns: 1fr;
