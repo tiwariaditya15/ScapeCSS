@@ -346,32 +346,68 @@
         <h2 class="headings">Cards</h2>
         <section id="cards">
           <section class="card card-shadow">
-            <img class="card-img" src="./images/card.webp" alt="" srcset="" />
-            <section class="card-content">
-              <p class="card-title">This is card title</p>
-              <p class="card-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
-                commodi unde maiores? Cupiditate quod?
-              </p>
+            <section class="card-header">
+              <span class="card-header-btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  aria-hidden="true"
+                  role="img"
+                  class="iconify iconify--mdi"
+                  width="32"
+                  height="32"
+                  preserveAspectRatio="xMidYMid meet"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53L12 21.35z"
+                    fill="currentColor"
+                  ></path>
+                </svg>
+              </span>
+              <img
+                class="card-img"
+                src="https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                alt=""
+                srcset=""
+              />
+            </section>
+            <section class="card-body">
+              <section class="card-content">
+                <p class="card-title">This is card title</p>
+                <p class="card-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
+                  commodi unde maiores? Cupiditate quod?
+                </p>
+              </section>
               <section class="card-actions">
-                <button>Primary Action</button>
+                <button>Primary</button>
               </section>
             </section>
           </section>
           <section class="snippet">
             <pre><code>
   &lt;section class="card card-shadow">
-    &lt;img class="card-img" src="./images/card.webp" alt="" srcset="" />
-    &lt;section class="card-content">
-      &lt;p class="card-title">This is card title&lt;/p>
-      &lt;p class="card-text">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
-      commodi unde maiores? Cupiditate quod, suscipit temporibus animi
-      nostrum eum, voluptatibus, distinctio quaerat quidem iure
-      repudiandae numquam velit rem! Voluptate, asperiores?
-      &lt;/p>
-      &lt;section class="card-actions">
-        &lt;button>Primary Action&lt;/button>
+    &lt;section class="card-header">
+      &lt;span class="card-header-btn">
+        &lt;svg> /* icons */&lt;/svg>
+      &lt;/span>
+      &lt;img
+        class="card-img"
+        src=""
+        alt=""
+        srcset=""
+      />
+    &lt;/section>
+    &lt;section class="card-body">
+      &lt;section class="card-content">
+        &lt;p class="card-title">This is card title&lt;/p>
+        &lt;p class="card-text">
+        
+        &lt;/p>
+        &lt;section class="card-actions">
+          &lt;button>Primary Action&lt;/button>
+        &lt;/section>
       &lt;/section>
     &lt;/section>
   &lt;/section>
@@ -401,10 +437,7 @@
     &lt;section class="card-content">
       &lt;p class="card-title">This is card title&lt;/p>
       &lt;p class="card-text">
-    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos
-    commodi unde maiores? Cupiditate quod, suscipit temporibus animi
-    nostrum eum, voluptatibus, distinctio quaerat quidem iure
-    repudiandae numquam velit rem! Voluptate, asperiores?
+    
       &lt;/p>
       &lt;section class="card-actions">
         &lt;button>Primary Action&lt;/button>
@@ -635,8 +668,7 @@
               Tempore optio vitae ut distinctio.
             </section>
             <section class="modal-action">
-              <button class="btn btn-primary-blue">Ok</button>
-              <button class="btn btn-outline-blue">Close</button>
+              <button class="btn">Ok</button>
             </section>
           </section>
         </section>
@@ -667,12 +699,6 @@
         <!-- text utilities -->
         <h2 class="headings">Text Utilities</h2>
         <section id="text-utilities" class="doc-outline">
-          <h1>This is heading 1</h1>
-          <h2>This is heading 2</h2>
-          <h3>This is heading 3</h3>
-          <h4>This is heading 4</h4>
-          <h5>This is heading 5</h5>
-          <h6>This is heading 6</h6>
           <p class="text-gray">This is Gray Text</p>
           <p class="lead">This is lead</p>
           <p class="lead text-center">This is lead and centered text</p>

@@ -82,7 +82,7 @@
 .btn {
   padding: 1rem 2.4rem;
   margin: 1rem auto;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   font-weight: 600;
   cursor: pointer;
@@ -210,7 +210,7 @@
 .btn-text {
   margin: 1rem auto;
   padding: 0.8rem;
-  border-radius: 0.3rem;
+  border-radius: 0.1rem;
   cursor: pointer;
 }
 .btn-text-success:hover {
@@ -301,13 +301,27 @@
   flex-direction: column;
   align-items: stretch;
   max-width: min(300px, 60%);
-  margin: auto;
   border-radius: 0.1rem;
 }
 .card-shadow {
   box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
-
+.card-header {
+  position: relative;
+}
+.card-header-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9fafb;
+  padding: 0.1rem;
+  border-radius: 50%;
+  margin: 0.2rem;
+  cursor: pointer;
+}
 .card-horizontal {
   display: flex;
   flex-direction: row;
@@ -335,26 +349,22 @@
 }
 .card-actions {
   display: flex;
-  justify-content: center;
+  justify-content: stretch;
 }
-.card-actions > button,
-.card-actions > a {
-  padding: 0.5rem 1.5rem;
-  margin: 1.3rem;
-  border: none;
+.card-actions > button {
+  background-color: var(--gray-600);
+  color: var(--gray-50);
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  border: 1px solid var(--gray-600);
   cursor: pointer;
-  border-radius: 0.5rem;
+  border-radius: 0.1rem;
   max-width: 100%;
-}
-.card-actions > a {
-  color: var(--success-dark);
-  border: 1px solid var(--success-light);
-  text-decoration: none;
 }
 
 /* images */
 .img-coverpage {
-  max-width: 50%;
+  max-width: 25%;
   margin: 0 auto;
 }
 
@@ -370,41 +380,30 @@
 /* form elements */
 .form-input {
   margin: 0 auto;
-  width: 60%;
+  width: 40%;
   padding: 1rem;
   border: none;
-  border-bottom: 2px solid var(--blue-light);
+  border-bottom: 1px solid var(--gray-600);
 }
 
 .form-input:focus {
   outline: none;
-  border: 4px solid #dbeafe;
+  border: 2px solid var(--gray-600);
 }
 
 .outlined {
-  border: 2px solid var(--blue-light);
+  border: 1px solid var(--gray-600);
 }
 
 .form-range {
   margin: 1rem 5rem;
   -webkit-appearance: none;
-  background-color: var(--blue-light);
+  background-color: var(--gray);
   height: 0.1rem;
   color: var(--blue-dark);
   cursor: pointer;
 }
-.form-range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  background: var(--blue-dark);
-  height: 1rem;
-  border: none;
-}
-.form-range::-moz-range-thumb {
-  background-color: var(--blue-light);
-  height: 1rem;
-  border: none;
-}
+
 .form-checkbox {
   margin: 1rem auto;
   border: none;
@@ -429,7 +428,7 @@ ul {
   padding: 1.5rem auto;
   margin: 0.5rem;
   max-width: min(350px, 100%);
-  border: 1px solid var(--gray-light);
+  border: 1px solid var(--gray);
   color: var(--gray-dark);
 }
 
@@ -447,13 +446,13 @@ ul {
   background-color: var(--gray-light);
 }
 .list > .active {
-  background-color: var(--blue-light);
-  color: var(--gray-dark);
+  background-color: var(--gray);
+  color: var(--gray-50);
 }
 
 .pill-rounded {
-  background-color: var(--blue-light);
-  color: var(--blue-dark);
+  background-color: var(--gray);
+  color: var(--gray-50);
   padding: 0.2rem;
   border-radius: 100%;
 }
@@ -473,7 +472,6 @@ ul {
 .nav-brandlogo {
   font-size: 1.5rem;
   font-weight: bolder;
-  /* cursor: pointer; */
 }
 .nav-links {
   display: flex;
@@ -483,14 +481,9 @@ ul {
 
 .nav-link {
   margin: 0;
-  padding: 1.2rem;
+  padding: 1.5rem;
   text-decoration: none;
-  border-radius: 0;
   color: currentColor;
-}
-
-.nav-link:hover {
-  font-weight: bolder;
 }
 
 .nav-profile {
@@ -506,7 +499,6 @@ ul {
   max-width: min(400px, 70%);
   margin-top: 1rem;
   margin-bottom: 1rem;
-  /* background-color: var(--gray-50); */
   color: var(--gray);
   padding: 1rem;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
@@ -520,13 +512,18 @@ ul {
   font-size: 1.5rem;
   cursor: pointer;
 }
+.modal-header-title {
+  color: var(--gray-600);
+}
 
 .modal-body {
   line-height: 1.3rem;
 }
 
 .modal-action > button {
-  /* padding: 1rem 2rem; */
+  color: var(--gray-50);
+  background-color: var(--gray-600);
+  border: none;
 }
 
 /* snackbars */
