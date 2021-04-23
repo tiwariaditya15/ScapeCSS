@@ -281,15 +281,15 @@
 /* badge that are icons */
 .badge-icon {
   position: relative;
-  margin: 1.5rem;
   border-radius: 0.2rem;
   text-align: center;
 }
 .badge-icon-notification {
   position: absolute;
-  /* top: -35px; */
+  top: -35px;
   width: 25px;
   height: 25px;
+  left: 1.6rem;
   margin: 0.1rem auto;
   border-radius: 50%;
   border: 1px solid;
@@ -360,6 +360,23 @@
   cursor: pointer;
   border-radius: 0.1rem;
   max-width: 100%;
+}
+
+/* chips */
+.chips {
+  display: flex;
+}
+
+.chip {
+  margin: 0.2rem;
+  padding: 0.2rem 0.8rem;
+  color: var(--gray-600);
+  background-color: var(--gray-50);
+  border-radius: 2.2rem;
+}
+
+.chip.chip-selected {
+  border: 1px solid var(--gray-600);
 }
 
 /* images */
