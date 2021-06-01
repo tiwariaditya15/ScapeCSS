@@ -405,8 +405,7 @@
 
 .form-input:focus {
   outline: none;
-  border-style: solid;
-  border-color: var(--gray-600);
+  border: 1px solid var(--gray-600);
 }
 
 .outlined {
