@@ -405,7 +405,6 @@
 
 .form-input:focus {
   outline: none;
-  border: 1px;
   border-style: solid;
   border-color: var(--gray-600);
 }
