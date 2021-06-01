@@ -400,16 +400,16 @@
   width: 40%;
   padding: 1rem;
   border: none;
-  border-bottom: 1px solid var(--gray-600);
+  border-bottom: 1px solid var(--gray-light);
 }
 
 .form-input:focus {
   outline: none;
-  border: 1px solid var(--gray-600);
+  border-color: var(--gray-600);
 }
 
 .outlined {
-  border: 1px solid var(--gray-600);
+  border: 1px solid var(--gray-light);
 }
 
 .form-range {
