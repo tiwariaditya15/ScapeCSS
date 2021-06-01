@@ -365,6 +365,7 @@
 /* chips */
 .chips {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .chip {
@@ -498,7 +499,7 @@ ul {
 
 .nav-link {
   margin: 0;
-  padding: 1.5rem;
+  padding: 2rem;
   text-decoration: none;
   color: currentColor;
 }
