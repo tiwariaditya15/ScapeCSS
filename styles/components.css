@@ -559,7 +559,7 @@ ul {
     rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 .snackbar > *:first-child {
-  font-size: 1.2rem;
+  font-size: 0.5rem;
 }
 .snackbar > *:last-child {
   cursor: pointer;
